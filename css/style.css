@@ -80,13 +80,13 @@ li {
 }
 
 .delete-btn {
-	background-color: #00000000;
+	background-color: transparent;
 	border:  none;
 	cursor: pointer;
 }
 
 input{
-	background-color: #00000000;
+	background-color: transparent !important;
 	font-size:20px;
 	margin: 10px 0;
 	text-align: center;
@@ -105,4 +105,11 @@ body{
 
 form input{
 	width: 100%;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active  {
+    transition: background-color 600000s 0s, color 600000s 0s;
 }
